@@ -179,8 +179,8 @@ def test_DependentCare(skip_jit):
     assert np.allclose(test_value, expected_value)
 
 
-def test_AfterTaxIncome(tests_path)
-    """
+def test_AfterTaxIncome(skip_jit):
+    """
     Tests the AfterTaxIncome function
     """
     
@@ -189,3 +189,23 @@ def test_AfterTaxIncome(tests_path)
     expected_value = 4000
 
     assert np.allclose(test_value, expected_value)
+
+
+def test_ExpandIncome(skip_jit):
+    """
+    Tests the ExpandIncome function
+    """
+
+    test_tuple = (10000, 1000, 500, 100, 200, 300, 400, 20, 500 ,50, 250, 10, 20, 30, 40, 60, 70, 80, 1500 ,2000, 16380)
+    test_value = calcfunctions.ExpandIncome(*test_tuple)
+    expected_value = 16280
+
+    assert np.allclose(test_value, expected_value)
+
+
+def test_LumpSumTax(skip_jit):
+    """
+    Tests the LumpSumTax function
+    """
+
+    
