@@ -179,38 +179,6 @@ def test_DependentCare(skip_jit):
     assert np.allclose(test_value, expected_value)
 
 
-<<<<<<< HEAD
-def test_AfterTaxIncome(skip_jit):
-    """
-    Tests the AfterTaxIncome function
-    """
-    
-    test_tuple = (1000, 5000, 4000)
-    test_value = calcfunctions.AfterTaxIncome(*test_tuple)
-    expected_value = 4000
-
-    assert np.allclose(test_value, expected_value)
-
-
-def test_ExpandIncome(skip_jit):
-    """
-    Tests the ExpandIncome function
-    """
-
-    test_tuple = (10000, 1000, 500, 100, 200, 300, 400, 20, 500 ,50, 250, 10, 20, 30, 40, 60, 70, 80, 1500 ,2000, 16380)
-    test_value = calcfunctions.ExpandIncome(*test_tuple)
-    expected_value = 16280
-
-    assert np.allclose(test_value, expected_value)
-
-
-def test_LumpSumTax(skip_jit):
-    """
-    Tests the LumpSumTax function
-    """
-
-    
-=======
 STD_in = [6000, 12000, 6000, 12000, 12000]
 STD_Aged_in = [1500, 1200, 1500, 1500, 1500]
 tuple1 = (0, 1000, STD_in, 45, 44, STD_Aged_in, 1000, 2, 0, 0, 0, 2, 0,
@@ -253,4 +221,3 @@ def test_StdDed(test_tuple, expected_value, skip_jit):
     test_value = calcfunctions.StdDed(*test_tuple)
 
     assert np.allclose(test_value, expected_value)
->>>>>>> upstream/master
