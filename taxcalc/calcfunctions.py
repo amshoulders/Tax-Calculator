@@ -659,6 +659,7 @@ def AGI(ymod1, c02500, c02900, XTOT, MARS, sep, DSI, exact, nu18, taxable_ubi,
     ----------
     ymod1: float
 <<<<<<< HEAD
+<<<<<<< HEAD
         Variable that is included in AGI
     c02500: float
         Social security (OASDI) benefits included in AGI
@@ -702,6 +703,8 @@ def AGI(ymod1, c02500, c02900, XTOT, MARS, sep, DSI, exact, nu18, taxable_ubi,
     c04600: float
         Personal exemptions after phase-out
 =======
+=======
+>>>>>>> upstream/master
 
     c02500: float
 
@@ -741,6 +744,9 @@ def AGI(ymod1, c02500, c02900, XTOT, MARS, sep, DSI, exact, nu18, taxable_ubi,
     -------
     tuple
         returns AGI (c00100), (pre_c04600), exemption amount (c04600)
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
     """
     # calculate AGI assuming no foreign earned income exclusion
